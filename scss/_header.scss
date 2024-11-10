@@ -21,13 +21,14 @@
                     &:hover{
                         transform: scale(1.1);
                         color: #FA7436;
+                        text-decoration: underline ;
                     }
                 }
             }
         }
 
     }
-    .contact_lins{
+    .contact_links{
         a{
             @include dFlex(center,center,row,5px);
           span{
@@ -37,6 +38,36 @@
           }
         }
     }
+     .burger_menu{
+        display: none;
+        width: 35px;
+        height: auto;
 
+    }
 }
+
+@media(max-width: 1000px){
+    .contact_links{
+        display: none;
+     }
+}
+@media(max-width: 768px){
+    header {
+     .header_content{
+         margin-top: 20px;
+         display: flex;
+         column-gap: 10px;
+         justify-content: space-around;
+         .nav_linsks{
+             display: none;
+         }
+         .burger_menu {
+             display: block;
+         }
+         .contact_links{
+            display: block;
+         }
+     }
+     } 
+  }
 
