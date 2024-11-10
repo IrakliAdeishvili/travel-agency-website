@@ -1,0 +1,42 @@
+.hero_content{
+    margin-top: 100px;
+    @include dFlex(center,center,column);
+
+    .text_wraper{
+        @include dFlex(space-between,center);
+        .main_title{
+            font-size: 48px;
+            line-height: 70px;
+            font-weight: bold;
+            color:#222222;
+            width: 561px;
+            font-family:"Lato",Jeko-Black;
+        }
+        .mein_content{
+           .main_desc{
+            font-size: 18px;
+            line-height: 28px;
+            width: 460px;
+            color: #444444;
+           }
+           .discover_now{
+            margin-top: 20px;
+            background-color: #FA7436;
+           max-width: 204px;
+           height: 56px;
+           border-radius: 8px;
+          @include dFlex(center,center);
+           a{
+            color: #FFFFFF;
+            width: 124px;
+            height: 16px;
+           }
+           }
+
+
+        }
+    }
+    .border_img{
+        margin-top: 60px;
+    }
+}
