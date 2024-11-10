@@ -1,0 +1,42 @@
+.header_content{
+    height: 100%;
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        width: 102px;
+        height: auto;
+    }
+    .nav_linsks{
+        nav{
+            .nav_lists{
+                @include dFlex(center,start,start,50px);
+
+                li{
+                    transition: 0.5s ease;
+                    cursor: pointer;
+                    
+                    &:hover{
+                        transform: scale(1.1);
+                        color: #FA7436;
+                    }
+                }
+            }
+        }
+
+    }
+    .contact_lins{
+        a{
+            @include dFlex(center,center,row,5px);
+          span{
+            color: #FA7436; 
+           line-height: 50px;
+            
+          }
+        }
+    }
+
+}
+
