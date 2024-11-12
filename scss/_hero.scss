@@ -38,6 +38,7 @@
     }
     .border_img{
         margin-top: 60px;
+        position: relative;
 
         img{
             width: 1200px;
@@ -49,6 +50,10 @@
             border-radius: 12px;
             background-color: #FFFFFF;
             @include dFlex(space-evenly,center);
+            position: absolute;
+            left: 45px;
+            bottom: -60px;
+            box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 
             .serch_bar_content{
                 @include dFlex(space-evenly,flex-start,column);
@@ -75,9 +80,6 @@
                      
                 }
             }
-
-           
-        
             
         }
         .Search_img{
@@ -89,3 +91,36 @@
         }
     }
 }
+
+
+
+@media(max-width:1200px){
+    main{
+       .hero_content{
+        margin-top: 20px;
+        @include dFlex(space-around,center,column,10px);
+
+        .text_wraper{
+            @include dFlex(space-between,flex-start,column);
+        }
+
+        .border_img{
+            position: relative;
+            img{
+                width: 750px;
+                height: auto;
+            }
+            .serch_bar{
+                position: absolute;
+                left: 20px;
+                bottom: -60px;
+                @include dFlex(space-evenly,center);
+                width: 700px;
+                height: 95px;
+            }
+           
+        }
+        
+       }
+    }
+}  
