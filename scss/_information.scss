@@ -1,3 +1,4 @@
+
 .ebout_us{
     margin-top: 150px;
     @include dFlex(space-between,flex-start);
@@ -10,7 +11,7 @@
 
     .ebout_us_content{
         .text_wraper{
-            p{
+            .title{
                 color: #FA7436;
                 
     
@@ -32,7 +33,7 @@
                  width: 460px;
                  color: #444444;
                 }
-                .discover_now{
+                .button{
                  margin-top: 20px;
                  background-color: #FA7436;
                  max-width: 204px;
@@ -72,6 +73,94 @@
             }
          }
     }
+ 
+}
 
-   
+@media(max-width:1200px){
+ section{
+    .ebout_us{
+        @include dFlex(space-around,center,column);
+        .image{
+            img{
+                width: 700px;
+            }
+        }
+        .ebout_us_content{
+            // margin-top: 20px;
+            .text_wraper{
+                .title{
+                    margin-top: 40px;
+                }
+             
+            }
+        } 
+    }
+ }
+    
+}
+@media(max-width:768px){
+ section{
+    .ebout_us{
+        @include dFlex(space-around,center,column);
+        .image{
+            img{
+                width: 480px;
+            }
+        }
+        .ebout_us_content{
+            .text_wraper{
+                .title{
+                    margin-top: 40px;
+                }
+                .main_title{
+                    width: 450px;
+                }
+                .mein_content{
+                    .main_desc{
+                        width: 450px;
+                    }
+                }
+             
+            }
+        } 
+    }
+ }
+    
+}
+@media(max-width:500px){
+ section{
+    .ebout_us{
+        margin-top: 80px;
+        @include dFlex(space-around,center,column);
+        .image{
+            img{
+                height: 400px;
+                width: 300px;
+            }
+        }
+        .ebout_us_content{
+            .text_wraper{
+                .title{
+                    margin-top: 40px;
+                }
+                .main_title{
+                    width: 300px;
+                }
+                .mein_content{
+                    .main_desc{
+                        width: 300px;
+                    }
+                }
+             
+            }
+            .review{
+                @include dFlex(space-evenly,center,row,70px); 
+                .review_content{
+                    width: 50px;
+                }
+            }
+        } 
+    }
+ }
+    
 }

@@ -44,6 +44,9 @@
         height: auto;
 
     }
+    .Search_img{
+        display: none;
+    }
 }
 
 @media(max-width: 1200px){
@@ -53,16 +56,20 @@
             margin-top: 20px;
             display: flex;
             column-gap: 10px;
-            justify-content: space-around;
-            
+            justify-content: space-around;       
         }
         .contact_links{
-            display: none;
+            // display: none;
+         a{
             span{
                 display: none;
-    
+
             }
-            // display: none;
+            img{
+                display: none;
+            }   
+         }
+            
          }
 
     }
@@ -84,6 +91,41 @@
          .contact_links{
             display: block;
          }
+         .Search_img{
+            display: block;
+            @include dFlex(center,center,row,20px);
+            img{
+                width: 35px;
+               
+            }
+        }
+     }
+     } 
+  }
+@media(max-width: 500px){
+    header {
+     .header_content{
+         margin-top: 20px;
+         display: flex;
+         column-gap: 10px;
+         justify-content: space-evenly;
+         .nav_linsks{
+             display: none;
+         }
+         .burger_menu {
+             display: block;
+         }
+         .contact_links{
+            display: block;
+         }
+         .Search_img{
+            display: block;
+            @include dFlex(center,center,row,20px);
+            img{
+                width: 35px;
+               
+            }
+        }
      }
      } 
   }
