@@ -1,0 +1,46 @@
+.tour_content{
+    .text_wraper{
+        @include dFlex(center,center,column);
+        row-gap: 50px;
+        .main_title {
+           
+            margin-top: 100px;
+            font-size: 48px;
+            line-height: 70px;
+            font-weight: bold;
+            color:#222222;
+            width: 600px;
+            font-family:"Lato",Jeko-Black;
+           
+        }
+        .main_lists{
+            @include dFlex(center,start,start,50px);
+            li{
+                .a{
+                    color: #222222;
+                }
+                hr{
+                    border-top: 1px solid #FA7436;
+                }
+                
+                a{
+                    color: #666666;
+                }   
+            }
+        }
+    }
+    .tour_cards{
+        .card{
+            border: 2px solid green;
+            width: 300px;
+            height: 500px;
+         .card_images{
+            img{
+                width: 300px;
+                height: 200px;
+                border-radius: 20px 20px 0px 0px;
+            }
+         }   
+        }
+    }
+}

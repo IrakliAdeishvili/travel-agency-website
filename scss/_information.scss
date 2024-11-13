@@ -11,12 +11,11 @@
 
     .ebout_us_content{
         .text_wraper{
+            @include dFlex(space-between,flex-start,column);
             .title{
                 color: #FA7436;
-                
-    
+                margin-top: 20px;
             }
-            @include dFlex(space-between,flex-start,column);
             .main_title{
                 margin-top: 20px;
                 font-size: 48px;
