@@ -1,5 +1,6 @@
 .Choose_Us{
     margin-top: 50px;
+    @include dFlex(space-around,center,);
     .text{
         @include dFlex(space-between,flex-start,column);
         .text_wraper{
@@ -40,5 +41,33 @@
             }
     
         }
+    }
+    .choose_us_content{
+        @include dFlex(space-around,center,);
+       
+       .card{
+        @include dFlex(space-around, flex-start,column);
+        margin-left: 35px;
+     
+       
+        img{
+            width: 40px;
+            height: 40px;
+        }
+        .card_title{
+            line-height: 35px;
+            font-size: 15px;
+            font-weight: bold;
+            color:#222222;
+            width: 150px;
+            font-family:"Lato",Jeko-Black;
+        
+        }
+        .card_text{
+            width: 160px;
+            font-size: 10px;
+            color: #444444;
+        }
+       } 
     }
 }
