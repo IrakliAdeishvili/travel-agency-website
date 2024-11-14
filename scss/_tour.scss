@@ -1,4 +1,5 @@
 .tour_content{
+    @include dFlex(center,center,column,20px);
     .text_wraper{
         @include dFlex(center,center,column);
         row-gap: 50px;
@@ -34,9 +35,9 @@
        display: grid;
        grid-template-columns: auto auto auto;
        row-gap: 40px;
-       
+       column-gap: 40px;
+       justify-items: center;
         .card{
-            border: 1px solid #999999;
             border-radius: 20px 20px 0px 0px;
             box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
             width: 300px;
@@ -132,5 +133,26 @@
             }
          }  
         }
+    }
+    .button{
+        margin-top: 50px;
+        border: 1px solid #FA7436;
+        border-radius: 8px;
+        width: 150px;
+        height: 50px;
+        @include dFlex(space-around,center,);
+
+        li{
+            a{
+                color: #FA7436;
+            }
+        }
+        &:hover{
+            background-color: #FA7436;
+            a{
+                color: #ffffff;
+            }
+        }
+
     }
 }
