@@ -30,17 +30,107 @@
         }
     }
     .tour_cards{
+        margin-top: 50px;
+       display: grid;
+       grid-template-columns: auto auto auto;
+       row-gap: 40px;
+       
         .card{
-            border: 2px solid green;
+            border: 1px solid #999999;
+            border-radius: 20px 20px 0px 0px;
+            box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
             width: 300px;
-            height: 500px;
+            height: 400px;
          .card_images{
             img{
                 width: 300px;
                 height: 200px;
                 border-radius: 20px 20px 0px 0px;
             }
-         }   
+         } 
+         .card_conent{
+            @include dFlex(space-around,flex-start,column,);
+            margin-left: 10px;
+            .card_loc{
+                @include dFlex(space-around,center,row,100px);
+                margin-top: 20px;
+
+                .locaton{
+                   
+                    width: 100px;
+                    height: 20px;
+                    li{
+                        display: flex;
+                        column-gap: 5px;
+                        img{
+                            width: 20px;
+                           }
+                           a{
+                            color: #FA7436;
+                           } 
+                     
+                    }
+                   
+                }
+                .assessment{
+                    width: 50px;
+                    height: auto;
+                    li{
+                        display: flex;
+                        column-gap: 5px;
+                        img{
+                            width: 20px;
+                        }
+                        a{
+                            color: #222222;
+                        }
+
+                    }
+                   
+                }
+            }
+            .card_text{
+
+                h2{
+                   
+                    font-size: 25px;
+                    line-height: 70px;
+                    font-weight: bold;
+                    color:#222222;
+                    width: 200px;
+                    font-family:"Lato",Jeko-Black;
+                }
+                p{
+                    color: #999999;
+                    width: 180px;
+                    height: 12px;
+                }
+            }
+            .card_link{
+                @include dFlex(space-around,center,row,100px);
+                margin-top: 30px;
+                h2{
+                    font-size: 25px;
+                    line-height: 20px;
+                    font-weight: bold;
+                    color:#FA7436; @include dFlex(space-around,center,row,60px);
+                    width: 50px;
+                    font-family:"Lato",Jeko-Black;
+                }
+                ul{
+                    li{
+                        @include dFlex(space-around,center,row,5px);
+                        a{
+                            color: #999999;
+                        } 
+                        img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+         }  
         }
     }
 }
