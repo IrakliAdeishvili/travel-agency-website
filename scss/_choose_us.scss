@@ -65,9 +65,144 @@
         }
         .card_text{
             width: 160px;
+            line-height: 15px;
             font-size: 10px;
             color: #444444;
         }
        } 
     }
 }
+
+
+@media (max-width:1200px){
+    section{
+        .Choose_Us{
+            @include dFlex(space-around,center,column);
+            .text{
+                @include dFlex(space-between,flex-start,column);
+                .text_wraper{
+                   .title{
+                    font-size: 24px;
+                    line-height: 70px;
+                    font-weight: bold;
+                    color:#222222;
+                    width:300px;
+                    font-family:"Lato",Jeko-Black;
+                   } 
+                   .main_desc{
+                    margin-top: 5px;
+                    font-size: 15px;
+                    line-height: 28px;
+                    width: 266px;
+                    color: #444444;
+                   }
+                }
+                .button{
+                    margin-top: 20px;
+                    border: 1px solid #FA7436;
+                    border-radius: 8px;
+                    width: 150px;
+                    height: 50px;
+                    @include dFlex(space-around,center,);
+                }
+            }
+            .choose_us_content{
+                margin-top: 50px;
+                @include dFlex(space-around,center,);
+                // flex-wrap: wrap;
+            } 
+        }
+       
+     }
+     
+}
+
+@media (max-width:768px){
+    section{
+        .Choose_Us{
+            @include dFlex(space-around,center,column);
+            .text{
+                @include dFlex(space-between,flex-start,column);
+                .text_wraper{
+                   .title{
+                    font-size: 24px;
+                    line-height: 70px;
+                    font-weight: bold;
+                    color:#222222;
+                    width:178px;
+                    font-family:"Lato",Jeko-Black;
+                   } 
+                   .main_desc{
+                    margin-top: 5px;
+                    font-size: 15px;
+                    line-height: 28px;
+                    width: 218px;
+                    color: #444444;
+                   }
+                }
+                .button{
+                    margin-top: 20px;
+                    border: 1px solid #FA7436;
+                    border-radius: 8px;
+                    width: 150px;
+                    height: 50px;
+                    @include dFlex(space-around,center,);
+                }
+            }
+            .choose_us_content{
+                margin-top: 50px;
+                @include dFlex(space-around,center,column);
+                row-gap: 40px;
+                
+            } 
+        }
+       
+     }
+ 
+}
+
+@media (max-width:500px){
+    section{
+        .Choose_Us{
+            @include dFlex(space-around,center,column);
+            .text{
+                @include dFlex(space-between,flex-start,column);
+                .text_wraper{
+                   .title{
+                    font-size: 24px;
+                    line-height: 70px;
+                    font-weight: bold;
+                    color:#222222;
+                    width:178px;
+                    font-family:"Lato",Jeko-Black;
+                   } 
+                   .main_desc{
+                    margin-top: 5px;
+                    font-size: 15px;
+                    line-height: 28px;
+                    width: 218px;
+                    color: #444444;
+                   }
+                }
+                .button{
+                    margin-top: 20px;
+                    border: 1px solid #FA7436;
+                    border-radius: 8px;
+                    width: 150px;
+                    height: 50px;
+                    @include dFlex(space-around,center,);
+                }
+            }
+            .choose_us_content{
+                margin-top: 50px;
+                @include dFlex(space-around,center,column);
+                row-gap: 40px;
+                
+            } 
+        }
+       
+     }
+ 
+}
+
+

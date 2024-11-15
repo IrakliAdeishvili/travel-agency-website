@@ -156,3 +156,71 @@
 
     }
 }
+
+
+
+@media(max-width: 1200px){
+    section{
+        .tour_content{
+            .tour_cards{
+                margin-top: 50px;
+                display: grid;
+                grid-template-columns: auto auto;
+                row-gap: 40px;
+                column-gap: 40px;
+                justify-items: center;
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    section{
+        .tour_content{
+            .text_wraper{
+                .main_title{
+                    margin-top: 100px;
+                    font-size: 30px;
+                    line-height: 70px;
+                    font-weight: bold;
+                    color:#222222;
+                    width: 390px;
+                    font-family:"Lato",Jeko-Black;
+                }
+                .main_lists{
+                    @include dFlex(center,start,start,20px);
+                }  
+            }
+            .tour_cards{
+                margin-top: 50px;
+                display: grid;
+                grid-template-columns: auto;
+                justify-items: center;
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    section{
+        .tour_content{
+            .text_wraper{
+                .main_title{
+                    margin-top: 100px;
+                    font-size: 30px;
+                    line-height: 70px;
+                    font-weight: bold;
+                    color:#222222;
+                    width: 360px;
+                    font-family:"Lato",Jeko-Black;
+                }
+                .main_lists{
+                    @include dFlex(center,start,start,12px);
+                    flex-wrap: wrap;
+                }  
+            }
+            
+        }
+    }
+}
+    
+    
+   
